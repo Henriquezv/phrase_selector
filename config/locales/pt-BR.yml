@@ -1,0 +1,20 @@
+pt-BR:
+  messages:
+    confirm: "Tem certeza?"
+  hello: "Olá Mundo"
+  links:
+      edit: "Editar"
+      show: "Mostrar"
+      delete: "Apagar"
+      new: "Novo"
+      back: "Voltar"
+  new:
+      phrase: "Nova Moeda"
+      mood_type: "Novo Estado de Sentimento"
+  editing:
+      phrase: "Editando Moeda"
+      mood_type: "Editando Estado de Sentimento"
+  showing:
+      phrase: "Mostrando Moeda"
+      mood_type: "Mostrando Estado de Sentimento"
+    

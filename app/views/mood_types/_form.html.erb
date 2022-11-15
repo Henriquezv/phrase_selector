@@ -1,0 +1,24 @@
+<%= form_with(model: mood_type, local: true) do |form| %>
+  <% if mood_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mood_type.errors.count, "error") %> prohibited this mood_type from being saved:</h2>
+
+      <ul>
+      <% mood_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :description %>
+    <%= form.text_field :description, class:"form-control", placeholder:"Digite algo..." %>
+  </div>
+  <br>
+
+  <div class="actions">
+    <%= form.submit nil, class: "btn btn-primary btn-sm" %>
+  </div>
+  <br>
+<% end %>

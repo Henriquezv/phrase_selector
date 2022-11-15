@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Estados de Sentimento</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th> <%=MoodType.human_attribute_name(:description)%> </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mood_types.each do |mood_type| %>
+      <tr>
+        <td><%= mood_type.description %></td>
+        <td><%= link_to t('links.show'), mood_type, class:"btn btn-primary" %></td>
+        <td><%= link_to t('links.edit'), edit_mood_type_path(mood_type), class:"btn btn-primary" %></td>
+        <td><%= link_to t('links.delete'), mood_type, method: :delete, data: { confirm: 'Tem certeza?'},class:"btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo', new_mood_type_path, class:"btn btn-primary" %>

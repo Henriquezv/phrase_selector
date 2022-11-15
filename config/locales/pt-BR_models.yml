@@ -1,0 +1,23 @@
+'pt-BR':
+  activerecord:
+    models:
+      phrase:
+        one: Frase
+        other: Frases
+      mood_type: 
+        one: Estado de Sentimento
+        other: Estados de Sentimento
+    attributes:
+      phrase:
+        id: Código
+        text: Texto
+        mood_type: Estado de sentimento
+        mood_type_id: ID Estado de sentimento
+        updated_at: Atualizado em
+        created_ate: Criado em
+      mood_type:
+        id: Código
+        description: Descrição
+        updated_at: Atualizado em
+        created_ate: Criado em
+        
